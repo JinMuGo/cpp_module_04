@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:48:59 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 10:49:28 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/20 11:40:06 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include "WrongAnimal.hpp"
+#include "const.h"
 
 #define W_CAT_DFLT_CTOR "- WrongCat: Default constructor called"
 #define W_CAT_CTR "- WrongCat: constructor called"

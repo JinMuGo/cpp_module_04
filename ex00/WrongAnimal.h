@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:26:46 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 10:49:54 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/20 11:40:04 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define WRONG_ANIMAL_H
 
 #include <iostream>
+#include "const.h"
 
 #define W_ANI_DFLT_CTOR "WrongAnimal: Default constructor called"
 #define W_ANI_CTR "WrongAnimal: constructor called"
