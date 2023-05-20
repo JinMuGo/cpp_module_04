@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:26:44 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 10:54:01 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/19 15:09:11 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-Animal::Animal() : type("Animal") {
-	std::cout << ANI_DFLT_CTOR << std::endl;
+WrongAnimal::WrongAnimal() : type("WrongAnimal") {
+	std::cout << W_ANI_DFLT_CTOR << std::endl;
 }
-Animal::Animal(const Animal& obj) {
-	std::cout << ANI_CPY_CTOR << std::endl;
+WrongAnimal::WrongAnimal(const WrongAnimal& obj) {
+	std::cout << W_ANI_CPY_CTOR << std::endl;
 	*this = obj;
 }
-Animal::~Animal() {
-	std::cout << ANI_DTOR << std::endl;
+WrongAnimal::~WrongAnimal() {
+	std::cout << W_ANI_DTOR << std::endl;
 }
-Animal& Animal::operator=(const Animal& obj) {
-	std::cout << ANI_CPY_ASGMT_OP_CALL << std::endl;
+WrongAnimal& WrongAnimal::operator=(const WrongAnimal& obj) {
+	std::cout << W_ANI_CPY_ASGMT_OP_CALL << std::endl;
 	if (this != &obj) {
 		this->type = obj.type;
 	}
 	return (*this);
 }
 
-void Animal::makeSound(void) const {
-	std::cout << ANI_MK_SOUND << std::endl;
+void WrongAnimal::makeSound(void) const {
+	std::cout << W_ANI_MK_SOUND << std::endl;
 }
 
-std::string Animal::getType(void) const {
+std::string WrongAnimal::getType(void) const {
 	return (this->type);
 }
