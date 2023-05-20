@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 15:05:35 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 15:02:57 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/20 15:32:59 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,12 @@ static inline void doDeepCopyTest(void) {
 
 	RightCat->getHead()->setIdeas("hi i'm invasion good to see you", 1);
 
-	std::cout << "RightCat think Idea" << std::endl;
+	std::cout << "RightCat think Idea\n" << std::endl;
 
 	for (int i = 0; i < 4; ++i)
 		std::cout << RightCat->getHead()->getIdeas()[i] << std::endl;
 
-	std::cout << "CopyCat think Idea" << std::endl;
+	std::cout << "CopyCat think Idea\n" << std::endl;
 
 	for (int i = 0; i < 4; ++i)
 		std::cout << CopyCat.getHead()->getIdeas()[i] << std::endl;
