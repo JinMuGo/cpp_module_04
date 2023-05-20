@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:44:19 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 14:11:18 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/20 15:08:41 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ Cat& Cat::operator=(const Cat& obj) {
 		this->type = obj.type;
 		try {
 			this->head = new Brain(*(obj.getHead()));
-		} catch(std::bad_alloc &e) {
+		} catch (std::bad_alloc& e) {
 			std::cerr << e.what() << std::endl;
-			exit(1);
+			std::exit(1);
 		}
 	}
 	return (*this);

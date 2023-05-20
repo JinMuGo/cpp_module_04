@@ -31,7 +31,7 @@ WrongAnimal& WrongAnimal::operator=(const WrongAnimal& obj) {
 }
 
 void WrongAnimal::makeSound(void) const {
-	std::cout << YELLOW W_ANI_MK_SOUND RESET<< std::endl;
+	std::cout << YELLOW W_ANI_MK_SOUND  RESET<< std::endl;
 }
 
 std::string WrongAnimal::getType(void) const {
