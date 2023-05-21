@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:19:27 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 16:33:28 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:43:19 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Ice& Ice::operator=(const Ice& obj) {
 	std::cout << ICE_CPY_ASGMT_OP_CALL << std::endl;
 
 	if (this != &obj) {
-		this->type_ = obj.type_;
+		this->type_ = obj.getType();
 	}
 
 	return (*this);
@@ -38,6 +38,6 @@ AMateria* Ice::clone() const {
 }
 
 void Ice::use(ICharacter& target) {
-	std::cout << this->type_ << "* shoots an ice bolt at " << target.getName()
-			  << " *" << std::endl;
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *"
+			  << std::endl;
 }

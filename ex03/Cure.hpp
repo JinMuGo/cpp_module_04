@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:24:24 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 16:25:55 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:43:17 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,14 @@
 
 #include "Cure.h"
 
-class Cure: public AMateria {
-   private:
+class Cure : public AMateria {
    public:
 	Cure();
 	Cure(const Cure& obj);
-	~Cure();
 	Cure& operator=(const Cure& obj);
+	virtual ~Cure();
 	virtual AMateria* clone() const;
+	virtual void use(ICharacter& target);
 };
 
 #endif
-
-Cure::Cure() {}
-Cure::Cure(const Cure& obj) {}
-Cure::~Cure() {}
-Cure& Cure::operator=(const Cure& obj) {}

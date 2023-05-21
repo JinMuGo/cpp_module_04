@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:19:30 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 16:32:01 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:43:22 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ class Ice : public AMateria {
    public:
 	Ice();
 	Ice(const Ice& obj);
-	~Ice();
 	Ice& operator=(const Ice& obj);
+	virtual ~Ice();
 	virtual AMateria* clone() const;
 	virtual void use(ICharacter& target);
 };

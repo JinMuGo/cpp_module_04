@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:19:29 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 17:07:38 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:43:21 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ICE_H
 
 #include "AMateria.hpp"
+#include "Character.hpp"
 #include "const.h"
 
 #define ICE_DFLT_CTOR GREEN "- Ice: Default constructor called" RESET

@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:35:40 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 16:47:57 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:43:34 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,16 @@
 
 class MateriaSource : public IMateriaSource {
    private:
+	AMateria* slot_[SLOT_SIZE];
+
    public:
 	MateriaSource();
 	MateriaSource(const MateriaSource& obj);
-	~MateriaSource();
 	MateriaSource& operator=(const MateriaSource& obj);
+	
+	virtual ~MateriaSource();
+	virtual void learnMateria(AMateria* ma);
+	virtual AMateria* createMateria(std::string const& type);
 };
 
 #endif

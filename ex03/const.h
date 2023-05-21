@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 11:39:20 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 15:00:56 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:43:13 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@
 #define DARK_CYAN "\e[36m"
 #define LIGHT_GRAY "\e[37m"
 #define DARK_GRAY "\e[90m"
-#define  RESET "\e[0m"
+#define RESET "\e[0m"
 
 #endif
