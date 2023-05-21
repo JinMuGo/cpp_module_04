@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:19:27 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/21 20:43:19 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:46:14 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Ice::Ice() : AMateria() {
 	std::cout << ICE_DFLT_CTOR << std::endl;
 	this->type_ = "ice";
 }
-Ice::Ice(const Ice& obj) {
+Ice::Ice(const Ice& obj) : AMateria() {
 	std::cout << ICE_CPY_CTOR << std::endl;
 	*this = obj;
 }

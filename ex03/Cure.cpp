@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:24:22 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/21 20:43:15 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:46:02 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Cure::Cure() : AMateria() {
 	std::cout << CURE_DFLT_CTOR << std::endl;
 	this->type_ = "cure";
 }
-Cure::Cure(const Cure& obj) {
+Cure::Cure(const Cure& obj): AMateria() {
 	std::cout << CURE_CPY_CTOR << std::endl;
 	*this = obj;
 }

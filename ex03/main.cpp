@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 16:34:59 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/21 20:43:28 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/21 20:47:34 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,6 @@ int main() {
 	default_test();
 	std::cout << "\n\nDo the my_test\n\n" << std::endl;
 	my_test();
-	system("leaks Interface_recap");
+	// system("leaks Interface_recap");
 	return 0;
 }
