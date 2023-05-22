@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 10:57:47 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 15:00:56 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/22 15:02:05 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@
 #define BRAIN_MEMBER_FUNC_CALL "- Brain: member function called"
 #define BRAIN_MK_SOUND "- Brain: MEOWWWWWWWW!"
 
-enum e_brain_property { DFLT_SIZE = 50 };
+enum e_brain_property { DFLT_SIZE = 100 };
 
 #endif

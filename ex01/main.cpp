@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 15:05:35 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 15:32:59 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/22 15:04:42 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static inline void doDefaultTest(void) {
 		i = new Cat();
 	} catch (std::bad_alloc& e) {
 		std::cerr << e.what() << std::endl;
-		std::exit(1);
+		exit(1);
 	}
 	delete j;  //should not create a leak
 	delete i;
@@ -108,7 +108,7 @@ static inline void doArrayTest(void) {
 				animalArr[i] = new Cat();
 		} catch (std::bad_alloc& e) {
 			std::cerr << e.what() << std::endl;
-			std::exit(1);
+			exit(1);
 		}
 	};
 

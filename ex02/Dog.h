@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:48:59 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 15:00:56 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/22 15:05:46 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define DOG_H
 
 #include <iostream>
+#include <cstdlib>
 #include "Animal.hpp"
 #include "Brain.hpp"
 #include "const.h"

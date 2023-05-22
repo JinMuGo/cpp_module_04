@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:52:55 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/20 11:08:10 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/22 15:01:35 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@
 
 class Dog : public Animal {
    private:
-	const Brain* head;
+	Brain* head;
 
    public:
 	Dog();
 	Dog(const Dog& obj);
 	Dog& operator=(const Dog& obj);
+	Brain* getHead(void) const;
 	virtual ~Dog();
 	virtual void makeSound(void) const;
 };
