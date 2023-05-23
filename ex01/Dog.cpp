@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:44:19 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/22 15:04:29 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/23 16:06:32 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Dog::Dog() : Animal() {
 }
 Dog::Dog(const Dog& obj) : Animal() {
 	std::cout << DOG_CPY_CTOR << std::endl;
+	this->head = NULL;
 	*this = obj;
 }
 Dog::~Dog() {
@@ -29,9 +30,9 @@ Dog& Dog::operator=(const Dog& obj) {
 	std::cout << DOG_CPY_ASGMT_OP_CALL << std::endl;
 	if (this != &obj) {
 		this->type = obj.type;
+		if (this->head)
+			delete this->head;
 		try {
-			if (this->head)
-				delete this->head;
 			this->head = new Brain(*(obj.getHead()));
 		} catch (std::bad_alloc& e) {
 			std::cerr << e.what() << std::endl;

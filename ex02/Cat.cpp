@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:44:19 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/22 15:04:42 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/23 16:06:49 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Cat::Cat() : Animal() {
 }
 Cat::Cat(const Cat& obj) : Animal() {
 	std::cout << CAT_CPY_CTOR << std::endl;
+	this->head = NULL;
 	*this = obj;
 }
 Cat::~Cat() {

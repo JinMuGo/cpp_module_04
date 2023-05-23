@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 15:05:35 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/22 15:04:42 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/23 16:07:19 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,10 +118,21 @@ static inline void doArrayTest(void) {
 		delete animalArr[i];
 }
 
+static inline void doEvalTest(void) {
+	Dog hi;
+
+	{ Dog jgo = hi; }
+}
+
 int main(void) {
+	std::cout << "------Default Test--------" << std::endl;
 	doDefaultTest();
+	std::cout << "------DeepCopy Test--------" << std::endl;
 	doDeepCopyTest();
+	std::cout << "------Array Test--------" << std::endl;
 	doArrayTest();
+	std::cout << "------Evaluation Test--------" << std::endl;
+	doEvalTest();
 	//system("leaks do_not_want_to_set_the_world_on_fire");
 	return 0;
 }
